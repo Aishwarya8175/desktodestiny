@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* बेस रीसट */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      background-color: #002244;
+    }
+    /* Left glitter container (बाईं ओर) */
+    .glitter-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20%;  /* स्क्रीन की बाईं 20% चौड़ाई */
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 999;
+    }
+    /* Right glitter container (दाईं ओर) */
+    .glitter-right {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 20%;  /* स्क्रीन की दाईं 20% चौड़ाई */
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 999;
+    }
+    /* Glitter elements styling */
+    .glitter {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 223, 0, 0.8); 
+      border-radius: 50%;
+      animation: fall 3s linear infinite;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- बाईं ओर ग्लिटर कंटेनर -->
+  <div class="glitter-left" id="glitterLeft"></div>
+  <!-- दाईं ओर ग्लिटर कंटेनर -->
+  <div class="glitter-right" id="glitterRight"></div>
+  
+  <script>
+    // Function to create glitter elements within a given container
+    function createGlitters(containerId, count) {
+      const container = document.getElementById(containerId);
+      for (let i = 0; i < count; i++) {
+        const glitter = document.createElement('div');
+        glitter.classList.add('glitter');
+        // Random horizontal position within container
+        glitter.style.left = Math.random() * 100 + '%';
+        // Start slightly above the container for a natural fall
+        glitter.style.top = Math.random() * -100 + 'px';
+        // Random animation delay to vary the falling effect
+        glitter.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(glitter);
+      }
+    }
+    
+    // Create 50 glitter elements for each side (adjust as needed)
+    createGlitters('glitterLeft', 50);
+    createGlitters('glitterRight', 50);
+  </script>
+</body>
+<style>
+body{font-family:Lucida Console,Courier New,monospace;margin:0;}
+/*Style the header*/
+.header{margin:0px; padding:0;text-align:center;color:#5D001E;
+background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0Eo1f7hhUD28_LDEUXJZnUyTV-XtfQSw0g&s');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;}
+/*Increase the font size of the h1 element*/
+.header h1{font-size:40px;}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Desk to Destiny</h1>
+<p>A friendship that became lifelong treasure</p>
+</body></div>
+<style>
+    /* Reset some default styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar Container */
+    .navbar {
+      background-color: #191970;
+      overflow: hidden;
+    }
+
+    /* Unordered list for navigation items */
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Each list item in the navigation bar */
+    .navbar li {
+      flex: 1;
+    }
+
+    /* Styling for the navigation links */
+    .navbar li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f2f2f2;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Change background on hover */
+    .navbar li a:hover {
+      background-color: #575757;
+    }
+
+    /* Image styling within the navigation link */
+    .navbar li a img {
+      vertical-align: middle;
+      margin-right: 8px;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="C:\Users\sriva\Downloads\let's the game begin.jpg"><img src="C:\Users\sriva\Downloads\lets.jpg" alt="Let's the game begin"> Let's the game begin</a></li>
+      <li><a href="C:\Users\sriva\Downloads\surprise-1.jpg"><img src="C:\Users\sriva\Downloads\gift.png" alt="Surprise 1"> Surprise 1</a></li>
+      <li><a href="C:\Users\sriva\Downloads\surprise-2.jpg"><img src="C:\Users\sriva\Downloads\gift.png" alt="Surprise 2"> Surprise 2</a></li>
+      <li><a href="C:\Users\sriva\Downloads\surprise-3.jpg"><img src="C:\Users\sriva\Downloads\gift.png" alt="Surprise 3"> Surprise 3</a></li>
+    </ul>
+  </nav>
+ </body>
+ <body> <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #222;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      height: 116vh;
+      font-family: Arial, sans-serif;
+    }
+    /* Movie Reel Frame styling */
+    .movie-reel-frame {
+      width: 100%;
+      height: 100%;
+      border: 15px solid #444;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      background: #6495ED;
+    }
+    /* Container for slides */
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+      width: calc(800px * 3); /* Adjust based on number of slides */
+    }
+    /* Individual slide styling */
+    .slide {
+      min-width: 855px;
+      height: 500px;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    /* Navigation buttons */
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      color: #333;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 24px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    .prev {
+      left: 30px;
+    }
+    .next {
+      right: 30px;
+    }
+  </style></body>
+<body>
+  <div class="movie-reel-frame">
+    <div class="slides">
+      <div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl5.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl4.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl3.jpg" alt="Slide 3">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl6.jpg" alt="Slide 4">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl2.jpg" alt="Slide 5">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl1.jpg" alt="Slide 6">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl7.jpg" alt="Slide 7">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl8.jpg" alt="Slide 8">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl9.jpg" alt="Slide 9">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl10.jpg" alt="Slide 10">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl11.jpg" alt="Slide 11">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl12.jpg" alt="Slide 12">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl13.jpg" alt="Slide 13">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl14.jpg" alt="Slide 14">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl15.jpg" alt="Slide 15">
+      </div>
+<div class="slide">
+        <img src="C:\Users\sriva\Downloads\surprise\sl16.jpg" alt="Slide 16">
+      </div>
+ </div>
+</div>
+    <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+  </div>
+  
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    
+    function showSlide(index) {
+      if (index >= totalSlides) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+      } else {
+        currentSlide = index;
+      }
+      slides.style.transform = 'translateX(' + (-800 * currentSlide) + 'px)';
+    }
+    
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+    
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+    
+    // Optional: Auto-play slideshow every 5 seconds
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #FFDEE9, #B5FFFC);
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Slideshow Container */
+        .slideshow-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Flip Cards Container */
+        .flip-cards-section {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .flip-card {
+            background: transparent;
+            width: 250px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .flip-card-front {
+            background: #FFF3CD;
+            color: #444;
+        }
+
+        .flip-card-back {
+            background: #FFABAB;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-back h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .flip-card-back p {
+            font-size: 18px;
+        }
+
+        /* Glowing Heart */
+        .heart {
+            color: #FF69B4;
+            text-shadow: 0 0 10px #FF69B4, 0 0 20px #FF1493, 0 0 30px #FF69B4;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #FF69B4, 0 0 20px #FF1493;
+            }
+            100% {
+                text-shadow: 0 0 20px #FF69B4, 0 0 30px #FF1493;
+            }
+        }
+    </style>
+<body>
+   
+    <!-- Flip Cards Section -->
+    <div class="flip-cards-section">
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Best Friends</h2>
+                        <p class="heart">❤️</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Together Forever</h3>
+                        <p>Through thick and thin, we stand by each other.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Memories</h2>
+                        <p class="heart">💖</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Unforgettable Moments</h3>
+                        <p>From laughter to tears, every moment is priceless.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Trust</h2>
+                        <p class="heart">💕</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>A Bond Unbreakable</h3>
+                        <p>Our trust keeps us closer than ever.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

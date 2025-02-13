@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>यूजर्स का फीडबैक</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .testimonial-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .testimonial-section h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .testimonial {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .testimonial:last-child {
+      border-bottom: none;
+    }
+    .testimonial p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="testimonial-section">
+    <h2>यूजर्स का फीडबैक</h2>
+    <div class="testimonial">
+      <p>"यह वेबसाइट मेरे लिए प्रेरणा का स्रोत है, जिससे मेरी सोच में बदलाव आया है।"</p>
+    </div>
+    <div class="testimonial">
+      <p>"इस वेबसाइट की जानकारी अत्यंत उपयोगी और प्रेरणादायक है।"</p>
+    </div>
+    <div class="testimonial">
+      <p>"मैं हर दिन कुछ नया सीखता हूँ, और यहाँ की सकारात्मक ऊर्जा ने मुझे आगे बढ़ने की राह दिखाई है।"</p>
+    </div>
+  </section>
+</body>
+</html>
